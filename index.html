@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Racing Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        canvas {
+            border: 5px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        #rewardDisplay {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        #toggleVision {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #toggleVision:hover {
+            background-color: #0056b3;
+        }
+
+        .rightSide {
+            margin-left: 20px;
+        }
+    </style>
+    <script src="ai.js" defer></script>
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div class="rightSide">
+        <div id="rewardDisplay">Reward: 0</div>
+        <button id="toggleVision">Mostrar área de visão</button>
+    </div>
+</body>
+</html>
